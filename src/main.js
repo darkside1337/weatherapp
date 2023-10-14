@@ -27,7 +27,7 @@ const setCurrentLocation = (updatedCurrentLocation) => {
 const makeRequest = async (str) => {
   let location = encodeURI(str);
   let apiKey = "e7250c597a324870a50140655231110";
-  let url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`;
+  let url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}`;
   let response = await fetch(url, { mode: "cors" });
   showLoader();
   try {
