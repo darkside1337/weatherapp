@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Pulse</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" alt="cloud logo" draggable="false">
+            <div class="form_container">
+                <form action="" id="searchForm">
+                    <div class="form_wrapper">
+                        <input id="searchBox" type="text" placeholder="Search location">
+                        <button type="submit" class="searchButton">
+                            <span class="material-symbols-outlined">
+                                search
+                            </span></button>
+                    </div>
+                </form>
+            </div>
+            <div class="errorField">
+                <h4 class="errorText"></h4>
+            </div>
+            <div class="settings">
+                <button id="metric" class="selected">°C, m/s</button>
+                <button id="imperial">°F, mph</button>
+            </div>
+        </header>
+        <main>
+            <div class="main_container">
+                <div class="loader">Loading...</div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

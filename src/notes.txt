@@ -1,0 +1,11 @@
+city: location.name Algiers
+country: location.country Algeria
+date: current.last_updated   "2023-10-12 14:15",
+temp: c: current.temp_c, f: current.temp_f
+weather text : current.condition.text
+weather icon: current.condition.icon
+feels like c: current.feelslike_c
+feels like f: current.feelslike_f
+humidity current.humidity
+wind speed: current.wind_kph
+wind speed: current.wind_mph
