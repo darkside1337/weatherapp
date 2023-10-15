@@ -88,7 +88,7 @@ const displayInfo = (obj) => {
   const weatherIconDiv = document.createElement("div");
   weatherIconDiv.classList.add("weatherIcon");
   const weatherImg = document.createElement("img");
-  weatherImg.src = `https:${obj.weatherIcon}`;
+  weatherImg.src = `https://${obj.weatherIcon}`;
   weatherImg.setAttribute("draggable", "false");
   /// weather icon append
   weatherIconDiv.appendChild(weatherImg);
@@ -192,7 +192,7 @@ const updateDisplay = (obj) => {
   const locationH1 = document.querySelector(".location > h1");
   locationH1.textContent = `${obj.cityName}, ${obj.countryName}`;
   const weatherImg = document.querySelector(".weatherIcon > img");
-  weatherImg.src = `https:${obj.weatherIcon}`;
+  weatherImg.src = `https://${obj.weatherIcon}`;
   const weatherDescriptionH1 = document.querySelector(
     ".weatherDescription > h1"
   );
